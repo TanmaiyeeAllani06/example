@@ -1,7 +1,7 @@
 # Onboarding Templates
 
 Source file for the `gh-copilot-adoption-onboard` skill.
-Read this file during Step 3. For each `## TARGET:` section, create the file
+Read this file during Step 4. For each `## TARGET:` section, create the file
 at the specified target path in the cloned repository using the section
 content verbatim.
 
@@ -48,165 +48,133 @@ This repository follows the GitHub Copilot Adoption Framework.
 
 ---
 
-## TARGET: .github/agents/README.md
+## TARGET: .github/agents/sample.agent.md
 
 ~~~markdown
-# Agents
-
-This folder contains named agent definitions for the GitHub Copilot Adoption Framework.
-
-## What Is an Agent
-
-An agent is a scoped role definition that tells GitHub Copilot how to behave when
-assigned a specific task. Each agent references one or more skills and defines clear
-responsibilities, rules, and verification criteria.
-
-## File Naming
-
-Agent files use the `.agent.md` extension:
-
-```
-.github/agents/<agent-name>.agent.md
-```
-
-## Frontmatter Schema
-
-Every agent file must include:
-
-```yaml
 ---
-name: agent-name
+name: sample-agent
 description: >
-  What this agent does and when to use it.
+  Replace with your agent's purpose and when to use it.
 skills:
-  - skill-name
+  - sample-skill
 ---
+
+# Sample Agent
+
+Replace this with your agent name. Use this agent when a user asks to
+[describe the task or workflow this agent handles].
+
+## Primary Goal
+
+[The single main outcome this agent is responsible for.]
+
+## Required Inputs
+
+- [Required input — e.g., repository in `owner/repo` format]
+
+If any required input is missing, ask the user before taking action.
+
+## Responsibilities
+
+- [Action one this agent performs]
+- [Action two this agent performs]
+
+## Rules
+
+- Do not commit directly to `main`.
+- Do not hardcode credentials, tokens, or secrets.
+- Stop and report clearly if any required input is missing.
+
+## Verification
+
+```bash
+test -f [expected output file]
 ```
-
-## Agent Structure
-
-Each agent file must define:
-
-- **Primary Goal** — the single main outcome this agent is responsible for
-- **Required Inputs** — what information the agent needs before acting
-- **Responsibilities** — each action the agent performs, specific and verifiable
-- **Rules** — constraints and guardrails
-- **Verification** — how the agent confirms its work is complete
-
-## Conventions
-
-- One agent per file.
-- Agent names must be unique across this folder.
-- Agents must not hardcode credentials, tokens, or secrets.
-- Agents must raise pull requests. Never commit directly to `main`.
 ~~~
 
 ---
 
-## TARGET: .github/skills/README.md
+## TARGET: .github/skills/sample/SKILL.md
 
 ~~~markdown
-# Skills
-
-This folder contains reusable skill definitions for the GitHub Copilot Adoption Framework.
-
-## What Is a Skill
-
-A skill is a packaged, step-by-step workflow that an agent can follow to complete a
-specific task. Skills are self-contained: they include all steps, error handling, and
-security rules needed to complete the task without relying on context outside the skill file.
-
-## Folder Structure
-
-Each skill lives in its own named subfolder containing a `SKILL.md`:
-
-```
-.github/skills/<skill-name>/SKILL.md
-```
-
-A skill folder may also include supporting files the skill depends on.
-
-## Frontmatter Schema
-
-Every `SKILL.md` must include:
-
-```yaml
 ---
-name: skill-name
+name: sample-skill
 description: >
-  What this skill does and when to use it.
+  Replace with your skill's purpose and when to use it.
 ---
+
+# Sample Skill
+
+Replace this with your skill name. [What this skill does in one sentence.]
+
+## When to Use
+
+- "[Trigger phrase that invokes this skill]"
+- "[Another trigger phrase]"
+
+Do not use if [describe when this skill should NOT be used].
+
+## Prerequisites
+
+- `gh` CLI authenticated or GitHub MCP server connected
+- [Any other prerequisites]
+
+## Steps
+
+### Step 1 - [Step Name]
+
+[What this step does.]
+
+```bash
+# Replace with real commands
+echo "step 1"
 ```
 
-## Skill Structure
+### Step 2 - [Step Name]
 
-Each `SKILL.md` must define:
+[What this step does.]
 
-- **When to Use** — trigger phrases and conditions where this skill applies
-- **Prerequisites** — what must be true before the skill can run
-- **Steps** — numbered, sequential steps with commands where applicable
-- **Error Handling** — a table of known failure cases and their resolutions
-- **Security** — constraints specific to this skill
+```bash
+# Replace with real commands
+echo "step 2"
+```
 
-## Conventions
+## Error Handling
 
-- One skill per subfolder.
-- Skill names must be unique across this folder.
-- Skills must not hardcode credentials, tokens, or secrets.
-- Keep steps concrete and verifiable.
-- Supporting files belong inside the skill's subfolder, not at the root of `skills/`.
+| Situation | Resolution |
+|---|---|
+| [Error case] | [How to handle it] |
+| Auth error | Run `gh auth status`; reconnect via `gh auth login`. |
+
+## Security
+
+- No hardcoded credentials, tokens, or secrets.
+- Validate all inputs before use.
 ~~~
 
 ---
 
-## TARGET: .github/instructions/framework.instructions.md
+## TARGET: .github/instructions/sample.instructions.md
 
 ~~~markdown
 ---
-applyTo: ".github/**"
+applyTo: "src/**"
 ---
 
-# Framework Instructions
+# Sample Instructions
 
-These instructions apply to all files under `.github/` in this repository.
+Replace `applyTo` with the file pattern these instructions should apply to.
+Examples:
+- `"src/**"` — all source files
+- `"**/*.py"` — all Python files
+- `"**/*.ts"` — all TypeScript files
 
-## Agents
+## Conventions
 
-Files in `.github/agents/` define named Copilot agents.
+- [Convention one for files matching the applyTo pattern]
+- [Convention two]
 
-- Use the `.agent.md` extension for all agent definition files.
-- Required frontmatter: `name`, `description`, `skills`.
-- Each agent must define: Primary Goal, Required Inputs, Responsibilities, Rules, Verification.
-- Agents must not commit directly to `main`.
-- Agents must not hardcode credentials, tokens, or secrets.
+## Prohibited Practices
 
-## Skills
-
-Files in `.github/skills/` define reusable skill packages.
-
-- Each skill lives in its own named subfolder: `.github/skills/<skill-name>/SKILL.md`.
-- Required frontmatter: `name`, `description`.
-- Each skill must define: When to Use, Prerequisites, Steps, Error Handling, Security.
-- Supporting files belong inside the skill's subfolder, not at the root of `skills/`.
-
-## Instructions
-
-Files in `.github/instructions/` define path-specific Copilot guidance.
-
-- Required frontmatter: `applyTo` targeting one or more file glob patterns.
-- Instructions apply only when Copilot is working with files matching the `applyTo` pattern.
-- Keep instructions concise. Avoid duplicating content already in `copilot-instructions.md`.
-
-## Workflows
-
-Files in `.github/workflows/` are GitHub Actions workflows.
-
-- Do not modify `validate-copilot-agent.yml` unless the upstream framework is updated.
-- All workflow changes go through pull requests against `main`.
-
-## General Conventions
-
-- All `.github/` changes go through pull requests. No direct commits to `main`.
-- No hardcoded credentials, tokens, or secrets in any file.
-- Avoid redundancy across agents, skills, instructions, and `copilot-instructions.md`.
+- [What not to do in files matching this pattern]
 ~~~
