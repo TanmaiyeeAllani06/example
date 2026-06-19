@@ -1,10 +1,9 @@
 ---
-name: github-adoption-onboarding-agent
+name: gh-adoption-framework-onboarding
 description: >
   Dedicated agent for onboarding repositories to the GitHub Copilot Adoption
   Framework by using the gh-copilot-adoption-onboard skill and verifying the
   required PR output.
-model: claude-haiku-4.5
 skills:
   - gh-copilot-adoption-onboard
 ---
@@ -19,17 +18,6 @@ Adoption Framework or Agent Factory.
 Create a pull request that adds the required GitHub Copilot Adoption Framework
 onboarding structure to the target repository.
 
-## Model
-
-This agent is pinned to `claude-haiku-4.5` — the fastest, cheapest tier
-available. Onboarding tasks (cloning, mkdir, file creation from heredocs,
-git commit, `gh pr create`) are fully scripted and deterministic; none of
-them need reasoning. Pinning avoids relying on auto-routing behavior, which
-can differ across Copilot surfaces and isn't guaranteed to stay on the cheap
-tier.
-
-If this model is ever deprecated, update this one line.
-
 ## Source of Truth
 
 Use the `gh-copilot-adoption-onboard` skill as the source of truth for the
@@ -37,24 +25,19 @@ step-by-step workflow and packaged files.
 
 ## Required Inputs
 
-- Target repository in `owner/repo` format
-
-Accepts:
-- Standard repositories: `my-org/my-project`
-- Org-level config repositories: `my-org/.github-private`
+- Target repository in `owner/repo` format (e.g., `my-org/my-project`)
 
 If the repository is not provided, ask the user for it before taking action.
 
 ## Responsibilities
 
 - Validate the repository name is in `owner/repo` format.
-- Accept repo names starting with `.` (e.g., `.github-private`) as valid.
 - Check viewer permissions on the target repository.
 - Fork the target repository automatically if write access is not available.
 - Clone the target repository or fork.
 - Create a dedicated onboarding branch.
-- Use the `github-adoption-onboarding` skill.
-- Create framework folders with informative guide files from `onboarding-templates.md`.
+- Use the `gh-copilot-adoption-onboard` skill.
+- Create framework folders with example files from `onboarding-templates.md`.
 - Copy the packaged `validate-copilot-agent.yml` workflow file.
 - Check for an existing open onboarding PR before creating a new one.
 - Commit and push the onboarding changes.
@@ -66,16 +49,15 @@ If the repository is not provided, ask the user for it before taking action.
 The pull request must include:
 
 - `.github/copilot-instructions.md`
-- `.github/agents/README.md`
-- `.github/skills/README.md`
-- `.github/instructions/framework.instructions.md`
+- `.github/agents/sample.agent.md`
+- `.github/skills/sample/SKILL.md`
+- `.github/instructions/sample.instructions.md`
 - `.github/workflows/validate-copilot-agent.yml`
 
 ## Rules
 
 - Do not commit directly to `main`.
 - Do not clone or copy the full adoption framework repository.
-- Do not create real agent or skill content unless explicitly asked.
 - Do not hardcode credentials, tokens, or secrets.
 - Do not create a duplicate PR if an open onboarding PR already exists.
 - Use fork workflow automatically if write access to the target repo is unavailable.
@@ -88,8 +70,8 @@ Before opening the pull request, verify these files exist:
 
 ```bash
 test -f .github/copilot-instructions.md
-test -f .github/agents/README.md
-test -f .github/skills/README.md
-test -f .github/instructions/framework.instructions.md
+test -f .github/agents/sample.agent.md
+test -f .github/skills/sample/SKILL.md
+test -f .github/instructions/sample.instructions.md
 test -f .github/workflows/validate-copilot-agent.yml
 ```
