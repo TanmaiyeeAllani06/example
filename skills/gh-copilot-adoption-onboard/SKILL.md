@@ -45,12 +45,10 @@ Do not use if the repo already has `.github/agents/`, `.github/skills/`, and
 Ask the user:
 
 > "Which repository would you like to onboard? Please provide the full name
-> in `owner/repo` format.
-> - Standard repository: `my-org/my-project`
-> - Org-level config: `my-org/.github-private`"
+> in `owner/repo` format (e.g., `my-org/my-project`)."
 
-Validate the input matches `<owner>/<repo>` format. Accept repo names starting
-with `.` (e.g., `.github-private`) as valid. If invalid, ask again.
+Validate the input matches `<owner>/<repo>` format before continuing. If
+invalid, ask again.
 
 ### Step 2 - Check Permissions and Decide Workflow
 
@@ -90,7 +88,7 @@ If the branch already exists, use `feat/gh-copilot-adoption-onboard-YYYYMMDD`.
 
 ```bash
 mkdir -p /tmp/$REPO_NAME-onboarding/.github/agents
-mkdir -p /tmp/$REPO_NAME-onboarding/.github/skills
+mkdir -p /tmp/$REPO_NAME-onboarding/.github/skills/sample
 mkdir -p /tmp/$REPO_NAME-onboarding/.github/instructions
 mkdir -p /tmp/$REPO_NAME-onboarding/.github/workflows
 ```
@@ -102,9 +100,9 @@ verbatim.
 | Section in `onboarding-templates.md` | Target path |
 |---|---|
 | `TARGET: .github/copilot-instructions.md` | `.github/copilot-instructions.md` |
-| `TARGET: .github/agents/README.md` | `.github/agents/README.md` |
-| `TARGET: .github/skills/README.md` | `.github/skills/README.md` |
-| `TARGET: .github/instructions/framework.instructions.md` | `.github/instructions/framework.instructions.md` |
+| `TARGET: .github/agents/sample.agent.md` | `.github/agents/sample.agent.md` |
+| `TARGET: .github/skills/sample/SKILL.md` | `.github/skills/sample/SKILL.md` |
+| `TARGET: .github/instructions/sample.instructions.md` | `.github/instructions/sample.instructions.md` |
 
 ### Step 5 - Copy the Validation Workflow File
 
@@ -125,9 +123,9 @@ git add .
 git commit -m "feat: onboard repository to GitHub Adoption Framework
 
 - Add .github/copilot-instructions.md
-- Add .github/agents/README.md
-- Add .github/skills/README.md
-- Add .github/instructions/framework.instructions.md
+- Add .github/agents/sample.agent.md
+- Add .github/skills/sample/SKILL.md
+- Add .github/instructions/sample.instructions.md
 - Add .github/workflows/validate-copilot-agent.yml"
 git push origin feat/gh-copilot-adoption-onboard
 ```
@@ -154,7 +152,6 @@ fi
 ### Step 8 - Raise a Pull Request
 
 ```bash
-# If forked, PR goes from fork branch → original repo
 if [ "$USE_FORK" = true ]; then
   HEAD="$YOUR_ACCOUNT:feat/gh-copilot-adoption-onboard"
 else
@@ -169,13 +166,14 @@ Onboards this repository to the GitHub Copilot Adoption Framework.
 
 ## Changes
 - \`.github/copilot-instructions.md\` - repo-level Copilot guidance
-- \`.github/agents/README.md\` - agent file format and conventions
-- \`.github/skills/README.md\` - skill folder structure and conventions
-- \`.github/instructions/framework.instructions.md\` - path-specific instructions for \`.github/**\`
+- \`.github/agents/sample.agent.md\` - example agent definition
+- \`.github/skills/sample/SKILL.md\` - example skill definition
+- \`.github/instructions/sample.instructions.md\` - example path-specific instructions
 - \`.github/workflows/validate-copilot-agent.yml\` - framework validation on PRs
 
-## Review Notes
-Update \`.github/copilot-instructions.md\` with project-specific conventions before merging." \
+## Next Steps
+- Update \`.github/copilot-instructions.md\` with project-specific conventions.
+- Replace sample files in \`agents/\`, \`skills/\`, and \`instructions/\` with real definitions." \
   --base main \
   --head $HEAD
 ```
