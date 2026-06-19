@@ -1,0 +1,18 @@
+name: Validate New Agent - Enterprise Policy Check
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'agents/**'
+      - '.github/agents/**'
+      - '.github/skills/**'
+
+jobs:
+  validate:
+    name: Validate agent profiles
+    uses: fractalcopilot/gh-copilot-adoption-framework/.github/workflows/validate-copilot-agent-v2.yaml@main
+    with:
+      pr_number: ${{ github.event.pull_request.number }}
+    secrets: inherit
