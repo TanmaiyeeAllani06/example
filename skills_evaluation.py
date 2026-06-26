@@ -2,6 +2,7 @@ import os
 import sys
 import re
 import json
+import subprocess
 import argparse
 import tempfile
 from pathlib import Path
@@ -600,23 +601,21 @@ QUALITY_LABELS = {
     "toc_for_long_references": "Referenced .md files over 100 lines must include a table of contents",
 }
 
-# ── RECOMMENDATIONS ───────────────────────────────────────────────────────────
-
 def recommendations(r: dict) -> list:
     recs = []
     if not r["_security_ok"]:
-        recs.append(f"CRITICAL — Security issues found: {', '.join(r['_secrets'])}")
+        recs.append(f"CRITICAL: Security issues found: {', '.join(r['_secrets'])}")
     if r["_struct_tier"] != "STRONG":
-        failed = [STRUCTURE_LABELS[k] for k, v in r["_struct_checks"].items() if not v]
-        recs.append(f"Structure — {'; '.join(failed)}")
+        failed = [STRUCTURE_LABELS.get(k, k) for k, v in r["_struct_checks"].items() if not v]
+        recs.append(f"Structure: {', '.join(failed)}")
     if r["_quality_tier"] != "STRONG":
-        failed = [QUALITY_LABELS[k] for k, v in r["_quality_checks"].items() if not v]
-        recs.append(f"Content Quality — {'; '.join(failed)}")
+        failed = [QUALITY_LABELS.get(k, k) for k, v in r["_quality_checks"].items() if not v]
+        recs.append(f"Content Quality: {', '.join(failed)}")
     if r["_token_tier"] != "STRONG":
-        limit = CONFIG["token_thresholds"]["strong_max"]
-        recs.append(f"Token Efficiency — Reduce file size ({r['_token_count']} tokens; target <= {limit})")
+        limit = CONFIG.get("token_thresholds", {}).get("strong_max", 2000)
+        recs.append(f"Token Efficiency: Reduce file size ({r['_token_count']} tokens, target <= {limit})")
     if not recs:
-        recs.append("All checks passed. Ready for adoption.")
+        recs.append("Status: All checks passed. Ready for adoption.")
     return recs
 
 # ── MARKDOWN REPORT GENERATOR ─────────────────────────────────────────────────
@@ -813,13 +812,35 @@ def run():
         print(f"  NOT RECOMMENDED      {', '.join(weak)}")
     print("\n" + "=" * W)
 
+        # ── 1. AUTOMATIC DRY RUN ──
+    dryrun_log = ""
+    try:
+        print("Running GitHub CLI dry-run validation...")
+        result = subprocess.run(
+            ["gh", "skill", "publish", "--dry-run"], 
+            cwd=".github",
+            capture_output=True, 
+            text=True, 
+            check=False
+        )
+        dryrun_log = result.stdout + "\n" + result.stderr
+    except Exception as e:
+        dryrun_log = f"Notice: Could not run GH CLI locally during test.\nError: {e}"
+
+    # ── 2. SAVE MARKDOWN REPORT WITH DRY RUN LOG ──
     report_path = Path(CONFIG["report"]["report_path"]).resolve()
-    report_path.write_text(generate_markdown(results, cfg_s, cfg_tok), encoding="utf-8")
+    md_text = generate_markdown(results, cfg_s, cfg_tok)
+    if dryrun_log:
+        md_text += f"\n## CLI Validation (gh skill publish --dry-run)\n```text\n{dryrun_log.strip()}\n```\n"
+    report_path.write_text(md_text, encoding="utf-8")
+
+    # ── 3. SAVE HTML DASHBOARD WITH DRY RUN LOG ──
     dashboard_path = report_path.with_name("skill_benchmark_dashboard.html")
     render_skills_evaluation_dashboard(
         results,
         dashboard_path,
         CONFIG,
+        dryrun_log  # <-- This passes the output to the dashboard!
     )
     print(f"\n  Report saved: {report_path.resolve()}\n")
     print(f"  Dashboard saved: {dashboard_path.resolve()}\n")
