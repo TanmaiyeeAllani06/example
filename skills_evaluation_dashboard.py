@@ -54,6 +54,7 @@ def render_skills_evaluation_dashboard(
     results: list[dict],
     output_path,
     config: dict | None = None,
+    dryrun_log: str = "",  
 ) -> None:
     """Render an interactive HTML dashboard from skill benchmark results."""
     output_path = Path(output_path)
@@ -109,6 +110,17 @@ def render_skills_evaluation_dashboard(
             <div class="issue-items"><span>No benchmark issues found</span></div>
           </div>
         </article>""")
+
+        dryrun_html = ""
+    if dryrun_log:
+        dryrun_html = f"""
+        <section class="panel">
+          <div class="panel-head"><h2>CLI Validation (gh skill publish --dry-run)</h2></div>
+          <div style="background: #111827; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; font-family: Consolas, monospace; font-size: 13px; line-height: 1.4;">
+            <pre style="margin: 0;">{html.escape(dryrun_log.strip())}</pre>
+          </div>
+        </section>
+        """
 
     html_doc = f"""<!doctype html>
 <html lang="en">
@@ -434,6 +446,8 @@ def render_skills_evaluation_dashboard(
     <div class="panel-head"><h2>Improvement Focus</h2></div>
     <div class="issue-list">{''.join(issue_cards)}</div>
   </section>
+  {dryrun_html}
+
 </main>
 
 <script>
