@@ -1,0 +1,84 @@
+{
+  "encoding": {
+    "active": "cl100k_base",
+    "alternatives": {
+      "cl100k_base": "GPT-4, GPT-4o, GPT-3.5 Turbo",
+      "o200k_base": "GPT-4o (higher throughput variant)",
+      "p50k_base": "Codex models (legacy)",
+      "r50k_base": "GPT-3 (legacy)"
+    }
+  },
+
+  "report": {
+    "report_path": "skill_benchmark_report.md"
+  },
+
+  "report_format": {
+    "collapsible": true
+  },
+
+  "token_thresholds": {
+    "strong_max": 2000,
+    "moderate_max": 5000
+  },
+
+  "structure": {
+    "good_min_pct": 85,
+    "average_min_pct": 50,
+    "max_description_chars": 1024,
+    "max_name_chars": 64,
+    "min_body_chars": 30,
+    "max_body_chars": 15000,
+    "hard_line_limit": 500,
+    "optimal_line_limit": 200,
+    "allowed_resource_extensions": [".md", ".json", ".yaml", ".yml", ".csv", ".xml", ".txt"],
+    "allowed_script_extensions": [".py", ".js", ".sh", ".ps1"],
+    "reserved_words": []
+  },
+
+  "content_quality": {
+    "good_min_pct": 80,
+    "average_min_pct": 50,
+    "min_meaningful_length": 200,
+    "min_imperative_pct": 0.70,
+    "section_dominance_pct": 0.35,
+    "duplicate_phrase_words": 8,
+    "duplicate_phrase_min": 3,
+    "bullet_word_limit": 125,
+    "min_description_chars": 30,
+    "progressive_disclosure_line_limit": 300,
+    "reference_file_toc_line_limit": 100,
+    "imperative_verbs": [
+      "run", "execute", "use", "create", "verify", "update", "write", "add", 
+      "remove", "delete", "check", "validate", "deploy", "build", "test", 
+      "ensure", "always", "never", "do", "configure", "setup", "analyze", 
+      "review", "generate", "format", "implement", "integrate", "install", 
+      "track", "document", "audit", "commit", "push", "pull", "merge", 
+      "fix", "refactor", "inspect", "clean", "compile"
+    ],
+    "validation_loop_keywords": [
+      "verify that", "check if", "repeat until", "if not, correct", 
+      "validation loop", "retry", "run tests to verify", "ensure the output"
+    ],
+    "gotchas_keywords": [
+      "gotcha", "edge case", "limitation", "pitfall", "known issue", "constraint"
+    ],
+    "output_template_keywords": [
+      "output template", "template", "response format", "output format", "format template"
+    ]
+  },
+
+  "dimension_weights": {
+    "_description": "Relative importance of each dimension in overall scoring. Must sum to 1.0.",
+    "structure": 0.25,
+    "content_quality": 0.30,
+    "token_efficiency": 0.20,
+    "security": 0.25
+  },
+
+  "overall": {
+    "_description": "Dimension tiers score as STRONG=3, MODERATE=2, WEAK=1. Overall is weighted mean of all 4 dimension scores.",
+    "strong_min_avg": 2.5,
+    "moderate_min_avg": 1.5
+  }
+}
