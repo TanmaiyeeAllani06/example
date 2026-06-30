@@ -1,0 +1,56 @@
+{
+  "encoding": {
+    "active": "cl100k_base",
+    "alternatives": {
+      "cl100k_base": "GPT-4, GPT-4o, GPT-3.5 Turbo",
+      "o200k_base": "GPT-4o (higher throughput variant)",
+      "p50k_base": "Codex models (legacy)",
+      "r50k_base": "GPT-3 (legacy)"
+    }
+  },
+
+  "report": {
+    "report_path": "skill_benchmark_report.md"
+  },
+
+  "report_format": {
+    "collapsible": true
+  },
+
+  "token_thresholds": {
+    "strong_max": 1000,
+    "moderate_max": 3000
+  },
+
+  "structure": {
+    "max_description_chars": 300,
+    "max_name_chars": 100,
+    "min_body_chars": 30,
+    "max_body_chars": 15000,
+    "hard_line_limit": 500,
+    "optimal_line_limit": 200
+  },
+
+  "content_quality": {
+    "good_min_pct": 80,
+    "average_min_pct": 50,
+    "section_dominance_pct": 0.35,
+    "duplicate_phrase_words": 8,
+    "duplicate_phrase_min": 3,
+    "bullet_word_limit": 125
+  },
+
+  "dimension_weights": {
+    "_description": "Relative importance of each dimension in overall scoring. Must sum to 1.0.",
+    "structure": 0.25,
+    "content_quality": 0.30,
+    "token_efficiency": 0.20,
+    "security": 0.25
+  },
+
+  "overall": {
+    "_description": "Dimension tiers score as STRONG=3, MODERATE=2, WEAK=1. Overall is weighted mean of all 4 dimension scores.",
+    "strong_min_avg": 2.5,
+    "moderate_min_avg": 1.5
+  }
+}
