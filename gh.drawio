@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="GitHub Copilot Adoption Framework" id="DCDJKAMH34T8sYrgCC1I">
+    <mxGraphModel dx="2943" dy="1506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;GitHub Copilot Adoption Framework&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="560" x="370" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot;&gt;Governance repo + enterprise controls + baseline Copilot configurations&lt;/font&gt;" vertex="1">
+          <mxGeometry height="22" width="560" x="370" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-3" parent="1" style="shape=mxgraph.azure.user;fillColor=#6366F1;strokeColor=#4F46E5;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="50" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-4" parent="1" style="text;html=1;align=center;verticalAlign=top;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Inter;fontColor=#1E293B;" value="&lt;b&gt;AI CoE Team&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18" width="110" x="25" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="142" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;strokeWidth=2;arcSize=5;shadow=1;" value="" vertex="1">
+          <mxGeometry height="300" width="870" x="195" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-7" parent="1" style="shape=image;image=https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png;verticalLabelPosition=bottom;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="22" width="22" x="205" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-8" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=13;fontFamily=Inter;fontColor=#1E293B;spacingLeft=5;" value="&lt;b&gt;GitHub Enterprise&lt;/b&gt;" vertex="1">
+          <mxGeometry height="26" width="180" x="230" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=7;shadow=1;" value="" vertex="1">
+          <mxGeometry height="240" width="370" x="220" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-10" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;spacingLeft=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;.github-private&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="220" x="228" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;fontSize=11;fontFamily=Inter;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;arcSize=10;" value="&lt;b&gt;📁 actions/validate-agents&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="340" x="235" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;fontSize=11;fontFamily=Inter;arcSize=15;" value="📜 scripts" vertex="1">
+          <mxGeometry height="30" width="150" x="245" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;fontSize=11;fontFamily=Inter;arcSize=15;" value="🧪 tests" vertex="1">
+          <mxGeometry height="30" width="150" x="415" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#A5B4FC;fontSize=11;fontFamily=Inter;arcSize=15;" value="🤖 agents" vertex="1">
+          <mxGeometry height="30" width="160" x="235" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#86EFAC;fontSize=11;fontFamily=Inter;arcSize=15;" value="⚡ skills" vertex="1">
+          <mxGeometry height="30" width="160" x="415" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F3FF;strokeColor=#C4B5FD;fontSize=11;fontFamily=Inter;arcSize=15;" value="⚙️ workflows" vertex="1">
+          <mxGeometry height="30" width="160" x="235" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#A5B4FC;fontSize=11;fontFamily=Inter;arcSize=15;" value="📄 instructions" vertex="1">
+          <mxGeometry height="30" width="160" x="415" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=12;fontFamily=Inter;" value="✅&lt;br&gt;&lt;b&gt;Copilot Controls&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="680" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="620" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=12;fontFamily=Inter;" value="📁&lt;br&gt;&lt;b&gt;Org Repos&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="120" x="710" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=12;fontFamily=Inter;" value="💻🤖&lt;br&gt;&lt;b&gt;IDE + Copilot&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="1170" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;3&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="1120" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-23" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-24" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-25" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-26" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-27" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=13;fontColor=#64748B;fontFamily=Inter;" value="&lt;i&gt;Foundation for Agents &amp;amp; Skills&lt;/i&gt;" vertex="1">
+          <mxGeometry height="20" width="250" x="450" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#67E8F9;strokeWidth=1;fontSize=12;fontFamily=Inter;fontColor=#0E7490;dashed=1;dashPattern=8 4;arcSize=25;" value="🔹 AI COE develops Custom Agents &amp;amp; Skills" vertex="1">
+          <mxGeometry height="28" width="320" x="410" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;strokeWidth=2;arcSize=3;shadow=1;" value="" vertex="1">
+          <mxGeometry height="270" width="1120" x="20" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-30" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font style=&quot;font-size:20px;&quot;&gt;&lt;b&gt;Agent &amp;amp; Skill Evaluation Workflow&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="600" x="280" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-31" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot;&gt;Automated evaluation on every PR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="600" x="280" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=11;fontFamily=Inter;" value="🔀&lt;br&gt;&lt;b&gt;PR Submitted&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="120" x="40" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="180" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4ADE80;strokeWidth=2;arcSize=7;shadow=1;" value="" vertex="1">
+          <mxGeometry height="140" width="390" x="230" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-35" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;spacingLeft=8;" value="&lt;b style=&quot;font-size:13px;&quot;&gt;⚡ Evaluation Workflow Execution&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="250" x="238" y="543" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#A5B4FC;fontSize=11;fontFamily=Inter;arcSize=20;" value="🤖 Agent Validation" vertex="1">
+          <mxGeometry height="30" width="165" x="248" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#86EFAC;fontFamily=Inter;arcSize=15;" value="⚡ &lt;b style=&quot;font-size:11px;&quot;&gt;Skill Evaluation&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9.5px;&quot; color=&quot;#166534&quot;&gt;(GH CLI + Semantic Checks)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="38" width="185" x="423" y="581" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;strokeColor=#FCD34D;fontSize=11;fontFamily=Inter;arcSize=20;" value="🪙 Token Usage Analysis" vertex="1">
+          <mxGeometry height="30" width="165" x="248" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0F2;strokeColor=#FDA4AF;fontSize=11;fontFamily=Inter;arcSize=20;" value="🛡️ Prompt Injection Testing" vertex="1">
+          <mxGeometry height="30" width="185" x="423" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="642" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=11;fontFamily=Inter;" value="📋&lt;br&gt;&lt;b&gt;Report Generated&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="690" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;3&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="857" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#22C55E;strokeWidth=2;arcSize=15;shadow=1;fontSize=12;fontFamily=Inter;" value="✅&lt;br&gt;&lt;b&gt;Approved&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="115" x="905" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-44" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-45" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-46" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-41" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#67E8F9;strokeWidth=1;fontSize=11;fontFamily=Inter;fontColor=#0E7490;dashed=1;dashPattern=8 4;arcSize=25;" value="🔹 Validates agents, evaluates skills, analyzes tokens, and tests for prompt injections automatically" vertex="1">
+          <mxGeometry height="28" width="600" x="280" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;strokeWidth=2;arcSize=3;shadow=1;" value="" vertex="1">
+          <mxGeometry height="240" width="1120" x="20" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-49" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font style=&quot;font-size:20px;&quot;&gt;&lt;b&gt;Repository Onboarding Workflow&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="560" x="300" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-50" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot;&gt;Automated onboarding of any repo to the framework via an Agent &amp;amp; Skill&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="600" x="280" y="783" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-51" parent="1" style="shape=mxgraph.azure.user;fillColor=#6366F1;strokeColor=#4F46E5;" value="" vertex="1">
+          <mxGeometry height="45" width="45" x="40" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-52" parent="1" style="text;html=1;align=center;verticalAlign=top;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Inter;fontColor=#1E293B;" value="&lt;b&gt;User&lt;/b&gt;" vertex="1">
+          <mxGeometry height="16" width="65" x="30" y="887" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-53" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="105" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#818CF8;strokeWidth=2;arcSize=10;shadow=1;fontSize=11;fontFamily=Inter;" value="&lt;b&gt;🤖 Onboarding&lt;br&gt;Agent&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748B&quot; style=&quot;font-size:9px;&quot;&gt;Orchestrates the&lt;br&gt;onboarding process&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="145" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-55" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="300" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4ADE80;strokeWidth=2;arcSize=10;shadow=1;fontSize=11;fontFamily=Inter;" value="&lt;b&gt;⚡ Onboarding&lt;br&gt;Skill&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748B&quot; style=&quot;font-size:9px;&quot;&gt;Clones, creates branch,&lt;br&gt;builds structure, opens PR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="340" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;3&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="505" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0EA5E9;strokeWidth=2;arcSize=8;shadow=1;" value="" vertex="1">
+          <mxGeometry height="115" width="250" x="545" y="817" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-59" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;fontColor=#1E293B;" value="&lt;b style=&quot;font-size:11px;&quot;&gt;📂 Framework Structure Created&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18" width="230" x="555" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-60" parent="1" style="text;html=1;align=left;verticalAlign=top;strokeColor=none;fillColor=none;fontFamily=monospace;spacingLeft=10;spacingTop=0;" value="&lt;font face=&quot;monospace&quot; style=&quot;font-size:11px;&quot; color=&quot;#475569&quot;&gt;├── .github/&lt;br&gt;│&amp;nbsp;&amp;nbsp; ├── agents/&lt;br&gt;│&amp;nbsp;&amp;nbsp; ├── skills/&lt;br&gt;│&amp;nbsp;&amp;nbsp; ├── workflows/&lt;br&gt;│&amp;nbsp;&amp;nbsp; ├── instructions/&lt;br&gt;│&amp;nbsp;&amp;nbsp; └── copilot-instructions.md&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="555" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-61" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#818CF8;fontStyle=1;fontSize=11;fontColor=#4338CA;fontFamily=Inter;" value="&lt;b&gt;4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="24" width="24" x="810" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#22C55E;strokeWidth=2;arcSize=15;shadow=1;fontSize=11;fontFamily=Inter;" value="✅ &lt;b&gt;PR Created&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748B&quot; style=&quot;font-size:9px;&quot;&gt;PR link returned&lt;br&gt;to user for review&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="130" x="850" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-63" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-51" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-64" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-65" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-66" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#67E8F9;strokeWidth=1;fontSize=11;fontFamily=Inter;fontColor=#0E7490;dashed=1;dashPattern=8 4;arcSize=25;" value="🔹 We created an Agent &amp;amp; Skill to onboard any repo to the framework automatically" vertex="1">
+          <mxGeometry height="28" width="620" x="270" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;strokeWidth=2;arcSize=3;shadow=1;" value="" vertex="1">
+          <mxGeometry height="235" width="1120" x="20" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-69" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font style=&quot;font-size:20px;&quot;&gt;&lt;b&gt;Instructions Layer&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="400" x="380" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-70" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot;&gt;Repo-level and path-specific Copilot instructions for governance&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="560" x="300" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=2;arcSize=6;shadow=1;" value="" vertex="1">
+          <mxGeometry height="100" width="350" x="120" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-72" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;spacingLeft=8;" value="&lt;b style=&quot;font-size:12px;&quot;&gt;📋 Repo-Level&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="150" x="130" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#A5B4FC;strokeWidth=1;fontSize=11;fontFamily=Inter;arcSize=15;" value="📘 Copilot Instructions&lt;br&gt;&lt;font color=&quot;#94A3B8&quot; style=&quot;font-size:9px;&quot;&gt;Project context, coding conventions,&lt;br&gt;architecture, testing, security&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="315" x="138" y="1105" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-74" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-75" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot; style=&quot;font-size:10px;&quot;&gt;Complements&lt;/font&gt;" vertex="1">
+          <mxGeometry height="16" width="80" x="520" y="1097" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=2;arcSize=6;shadow=1;" value="" vertex="1">
+          <mxGeometry height="100" width="450" x="640" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-77" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;spacingLeft=8;" value="&lt;b style=&quot;font-size:12px;&quot;&gt;📂 Path-Specific&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="650" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;strokeWidth=1;fontSize=11;fontFamily=Inter;arcSize=15;" value="📜 Scripts Instructions" vertex="1">
+          <mxGeometry height="35" width="135" x="650" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;strokeWidth=1;fontSize=11;fontFamily=Inter;arcSize=15;" value="🧪 Test Instructions" vertex="1">
+          <mxGeometry height="35" width="135" x="795" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;strokeWidth=1;fontSize=11;fontFamily=Inter;arcSize=15;" value="📖 Docs Instructions" vertex="1">
+          <mxGeometry height="35" width="135" x="940" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#67E8F9;strokeWidth=1;fontSize=11;fontFamily=Inter;fontColor=#0E7490;dashed=1;dashPattern=8 4;arcSize=25;" value="🔹 Instructions enforce coding standards at repo and path level" vertex="1">
+          <mxGeometry height="28" width="500" x="330" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-82" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#CBD5E1;strokeWidth=2;arcSize=3;shadow=1;" value="" vertex="1">
+          <mxGeometry height="220" width="1120" x="20" y="1245" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-83" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;font style=&quot;font-size:20px;&quot;&gt;&lt;b&gt;Validated Custom Agents → Reused in Project Repos&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="740" x="210" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-84" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Inter;" value="&lt;font color=&quot;#64748B&quot;&gt;Approved agents &amp;amp; skills are published and reused across org repositories&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="600" x="280" y="1277" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=11;fontFamily=Inter;" value="🔧&lt;br&gt;&lt;b&gt;Agent Actions&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="115" x="45" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-86" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#818CF8;strokeWidth=2;arcSize=10;shadow=1;fontSize=12;fontFamily=Inter;" value="🤖 &lt;b&gt;Central Repo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748B&quot; style=&quot;font-size:10px;&quot;&gt;Holds all APPROVED agents,&lt;br&gt;skills, instructions &amp;amp; workflows&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="230" x="240" y="1315" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-87" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0EA5E9;strokeWidth=2;arcSize=10;shadow=1;fontSize=12;fontFamily=Inter;" value="📁 &lt;b&gt;Org Project Repos&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64748B&quot; style=&quot;font-size:10px;&quot;&gt;Developers in onboarded repos&lt;br&gt;can now use these agents&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="230" x="600" y="1315" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=2;arcSize=15;shadow=1;fontSize=12;fontFamily=Inter;" value="💻🤖&lt;br&gt;&lt;b&gt;IDE + Copilot&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="960" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-89" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Inter;" value="&lt;b style=&quot;color: rgb(129, 140, 248); font-size: 11px;&quot;&gt;Publish&lt;/b&gt;" vertex="1">
+          <mxGeometry height="18" width="75" x="500" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-90" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-85" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-91" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-86" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#818CF8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-92" edge="1" parent="1" source="bwW3Hnns_1HWqWbJcwMw-87" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bwW3Hnns_1HWqWbJcwMw-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bwW3Hnns_1HWqWbJcwMw-93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#67E8F9;strokeWidth=1;fontSize=12;fontFamily=Inter;fontColor=#0E7490;dashed=1;dashPattern=8 4;arcSize=25;" value="🔹 Once approved, Custom Agents &amp;amp; Skills are made available at the enterprise level" vertex="1">
+          <mxGeometry height="28" width="560" x="300" y="1425" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
